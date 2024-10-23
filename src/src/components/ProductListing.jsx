@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import mockProducts from '../mockData/mockProducts.json';
+import mockProducts from '../MockData/mockProducts.json';
 import Headline from './Headline';
 import AOS from 'aos';
-import 'aos/dist/aos.css';  // Import AOS CSS
+import 'aos/dist/aos.css';  
 
 const ProductListing = () => {
   const [products, setProducts] = useState([]);
