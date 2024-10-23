@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 import ProductListing from './components/ProductListing';
 import './tailwind.css';
 import './global.css';
