@@ -18,7 +18,7 @@ const ProductListing = () => {
 
     // Simulate fetching data from a local file
     setProducts(mockProducts);
-  }, []);
+  }, []); // Empty dependency array to run only once
 
   return (
     <div className="product-listing w-full min-h-screen container mx-auto m-32 p-6">
