@@ -1,0 +1,176 @@
+/* Toggle Switch Styles */
+/* Navbar Styling Enhancements */
+nav {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+/* Toggle Switch Styles */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+    font-family: theme('fontFamily.sans');
+  }
+  
+  .toggle-checkbox {
+    display: none; /* Hide default checkbox */
+  }
+  
+  /* Custom Toggle Slider Styling */
+  .toggle {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background-color: #90e0ef; /* Updated to make it visible against the white navbar */ /* Neutral color for default */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow to improve contrast */
+
+  }
+  
+  .toggle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0077b6; /* Updated to make the slider button visible */ /* White slider button */
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Added shadow for slider button */
+  }
+  
+  /* Dark Mode - Checked State */
+  input[type="checkbox"]:checked + .toggle {
+    background-color: var(--primary-color); /* Deep Blue when dark mode is enabled */
+  }
+  
+  input[type="checkbox"]:checked + .toggle::after {
+    transform: translateX(24px);
+    background-color: #90e0ef; /* Aqua Glow to indicate active state */
+  }
+  
+  .toggle-label {
+    user-select: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    }
+    
+    :root {
+      /* Light Mode Colors */
+      --primary-color: #4A90E2;      /* Soft Blue, calm and inviting */
+      --background-color: #f0f8fa;   /* Pale Aqua, light and serene */
+      --text-color: #2d3748;         /* Soft Charcoal, comfortable for the eyes */
+      --accent-color: #87cddf;       /* Gentle Teal, for a calming effect */
+      --hover-color: #5eb1d9;        /* Soft Aqua Blue, welcoming and engaging */
+      --card-background: #ffffff;    /* White for a clean card background */
+      --border-color: #cbd5e0;       /* Light Gray, for soft borders */
+  }
+  
+  [data-theme="dark"] {
+    /* Dark Mode Colors */
+    --primary-color: #4A90E2;      /* Soft Blue for a welcoming feel, matching light theme */
+    --background-color: #10162F;   /* Deep Navy, dark but calm */
+    --text-color: #f8f0f3;         /* Light gray for easy readability */
+    --accent-color: #90e0ef;       /* Aqua Glow for a soft yet noticeable accent */
+    --hover-color: #60A5FA;        /* Soft Aqua Blue for inviting interactions */
+    --card-background: #2A3A4E;    /* Dark Slate Blue for a calm card background */
+    --border-color: #4B5563;       /* Dark slate gray, subtle and soft borders */
+}
+
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: theme('fontFamily.sans');
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  h1:hover .underline-hover {
+    width: 100%; /* Expands to full width on hover */
+  }
+  
+  .underline-hover {
+    content: "";
+    width: 0;
+    height: 4px; /* Adjust thickness */
+    background-color: #0077b6; /* Light Blue */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease-out; /* Smooth transition */
+  }
+  
+  .dark .underline-hover {
+    background-color: #90e0ef; /* Light Aqua for dark mode */
+  }
+
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--hover-color);
+  }
+  
+  .card {
+    background-color: var(--card-background);
+    border: 1px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  button {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:hover {
+    background: var(--hover-color);
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+    .card {
+      padding: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+    }
+  }
+  

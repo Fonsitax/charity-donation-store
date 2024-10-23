@@ -1,0 +1,5 @@
+@tailwind base;        /* Resets and normalizes CSS */
+@tailwind components;  /* Adds Tailwind's component classes */
+@tailwind utilities;   /* Adds Tailwind's utility classes */
+
+
