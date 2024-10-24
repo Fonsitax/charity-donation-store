@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import water from '../assets/images/water.png';
+import sea1 from '../assets/images/sea1.png';
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="src/assets/images/sea (1).png" alt="" />
+          <img src="src/assets/images/sea1.png" alt="" />
           Ocean Nation
         </motion.h1>
         <motion.p
