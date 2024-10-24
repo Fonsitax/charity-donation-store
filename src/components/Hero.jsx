@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import water from '../assets/images/water.png';
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: "url('src/assets/images/blue-beach.png')",
+          backgroundImage: "url('src/assets/images/water.png')",
         }}
       ></div>
 

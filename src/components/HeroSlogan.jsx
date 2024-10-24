@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Headline from './Headline';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import sea1 from '../assets/images/sea1.png';
 
 const HeroSlogan = () => {
   useEffect(() => {
