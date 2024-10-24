@@ -16,7 +16,7 @@ const HeroSlogan = () => {
         data-aos="fade-up"
       >
         <img 
-          src="src/assets/images/sea-2.png" 
+          src="src/assets/images/sea1.png" 
           alt="Ocean Nation Logo"
           className="h-48 w-48 md:h-64 md:w-64"
         />
