@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import sea1 from '../assets/images/sea1.png';
 
 const Footer = () => {
   return (
     <footer className="w-full  flex flex-col justify-center items-center bg-[#f0f8fa] dark:bg-[#10162F] text-center p-6">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center mb-4">
         <img 
-          src="src/assets/images/sea (1).png" 
+          src="src/assets/images/sea1.png" 
           alt="Ocean Cleanup Icon"
           className="h-16 w-16 mb-4"
         />
