@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the mobile menu
-import sea1 from 'src/assets/images/sea-1.png';
+import sea1 from './assets/images/sea-1.png'; // Fixed import path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Manage mobile menu state
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  }};
+  }; // Removed extra curly brace
 
   return (
     <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center p-4 bg-white bg-opacity-90 shadow-md">
       <div className="flex items-center space-x-4">
         <a href="/" className="flex items-center">
           <img 
-            src="src/assets/images/sea-1.png"
+            src={sea1} // Use the imported image here
             alt="Logo" 
             className='h-12 w-12'
           />
@@ -49,6 +49,6 @@ const Navbar = () => {
       </div>
     </nav>  
   );
-;
+}; // Fixed semicolon and removed extra characters
 
 export default Navbar;
