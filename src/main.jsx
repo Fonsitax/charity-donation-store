@@ -5,6 +5,7 @@ import ThemeToggle from './components/ThemeToggle';
 import Navbar from './components/NavBar';
 import './tailwind.css';
 import './global.css';
+import Footer from './components/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
