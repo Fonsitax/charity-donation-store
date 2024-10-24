@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the mobile menu
-import sea-1 from 'src/assets/images/sea-1.png';
+import sea1 from 'src/assets/images/sea-1.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Manage mobile menu state
