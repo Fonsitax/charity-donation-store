@@ -4,6 +4,7 @@ import mockProducts from '../MockData/mockProducts.json';
 import Headline from './Headline';
 import AOS from 'aos';
 import 'aos/dist/aos.css';  
+import images from '../assets/images';
 
 const ProductListing = () => {
   const [products, setProducts] = useState([]);

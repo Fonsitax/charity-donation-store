@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for the mobile menu
+import sea-1 from 'src/assets/images/sea-1.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Manage mobile menu state
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
+  }};
 
   return (
     <nav className="fixed top-0 left-0 w-full z-20 flex justify-between items-center p-4 bg-white bg-opacity-90 shadow-md">
@@ -46,7 +47,7 @@ const Navbar = () => {
           <li><a href="#new-collection" className="hover:text-blue-500 text-xl">NEW COLLECTION</a></li>
         </ul>
       </div>
-    </nav>
+    </nav>  
   );
 };
 
