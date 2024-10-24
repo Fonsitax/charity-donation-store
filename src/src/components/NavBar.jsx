@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-4">
         <a href="/" className="flex items-center">
           <img 
-            src="src/assets/images/sea (1).png"
+            src="src/assets/images/sea-1.png"
             alt="Logo" 
             className='h-12 w-12'
           />
