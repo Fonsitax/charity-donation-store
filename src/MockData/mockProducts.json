@@ -4,34 +4,34 @@
     "name": "Reusable Water Bottle",
     "description": "Help reduce plastic waste with this eco-friendly water bottle.",
     "price": 15.99,
-    "image": "src/assets/images/Bottle.png"
+    "image": "/assets/images/Bottle.png"
   },
   {
     "id": 2,
     "name": "Ocean Cleanup T-Shirt",
     "description": "Show your support for ocean cleanup with this stylish t-shirt.",
     "price": 24.99,
-    "image": "src/assets/images/tshirt.png"
+    "image": "/assets/images/tshirt.png"
   },
   {
     "id": 3,
     "name": "Bamboo Toothbrush",
     "description": "A biodegradable toothbrush for a cleaner planet.",
     "price": 3.99,
-    "image": "src/assets/images/bambootoothbrush.png"
+    "image": "/assets/images/bambootoothbrush.png"
   },
   {
     "id": 4,
     "name": "Recycled Cotton Tote Bag",
     "description": "Carry your essentials in this tote bag made from recycled cotton.",
     "price": 12.99,
-    "image": "src/assets/images/totebag.png"
+    "image": "/assets/images/totebag.png"
   },
   {
     "id": 5,
     "name": "Eco-Friendly Sunscreen",
     "description": "Protect your skin and the ocean with this reef-safe sunscreen.",
     "price": 9.99,
-    "image": "src/assets/images/sunscreen.png"
+    "image": "/assets/images/sunscreen.png"
   }
 ]

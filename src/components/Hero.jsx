@@ -1,19 +1,18 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import water from '../assets/images/water.png';
-import sea1 from '../assets/images/sea1.png';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="bg-opacity-80 w-full h-screen"> {/* Adjusted padding at the top */}
+    <section className="bg-opacity-80 w-full h-screen">
+      {" "}
+      {/* Adjusted padding at the top */}
       {/* Background Image */}
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: "url('src/assets/images/water.png')",
+          backgroundImage: "url('/assets/images/water.png')",
         }}
       ></div>
-
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 text-center text-white">
         <motion.h1
@@ -22,7 +21,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img src="src/assets/images/sea1.png" alt="" />
+          <img src="/assets/images/sea1.png" alt="" />
           Ocean Nation
         </motion.h1>
         <motion.p
@@ -43,7 +42,6 @@ const Hero = () => {
           Shop Now
         </motion.a>
       </div>
-
       {/* Optional Light Overlay for better readability */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
     </section>
